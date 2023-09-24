@@ -1,0 +1,14 @@
+.Footer{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+.Footer p{
+    font-size: 15px;
+}
+
+@media (orientation:portrait){
+    .Footer p{
+        font-size: 7px;
+    }
+}

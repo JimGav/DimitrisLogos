@@ -1,0 +1,107 @@
+.Hero {
+    text-align: center;
+    padding: 8% 0;
+    position: relative;
+    background-color: aliceblue;
+    overflow-y: hidden;
+}
+
+.Hero-header,
+.Hero-btn {
+    margin: 20px;
+    animation: 2s animate-fade;
+}
+
+.Hero p {
+    animation: 2s animate-fade;
+}
+
+#Hero-logo1 {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    height: 300px;
+    animation: 1s slideInLeft ease-out, 1s scale-up;
+}
+
+#Hero-logo2 {
+    position: absolute;
+    left: 40px;
+    top: 400px;
+    height: 400px;
+    animation: 1s slideInLeft ease-out, 1s scale-up;
+}
+
+#Hero-logo3 {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    height: 300px;
+    transform: rotate(20deg);
+    animation: 1s slideInRight , 1s rotate , 1s scale-up;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(380deg);
+    }
+}
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes scale-up {
+    0% {
+        height: 1%;
+        font-size: 0px;
+    }
+}
+
+@media (orientation:portrait){
+
+    .Hero{
+        padding: 50px 10px;
+    }
+    .Hero img{
+        display: none;
+    }
+    .Hero header,h1{
+        font-size: 30px;
+        margin: 0;
+    }
+    .Hero p, .Hero button{
+        font-size: 15px;
+    }
+}

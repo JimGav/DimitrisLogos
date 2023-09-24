@@ -1,0 +1,34 @@
+[
+    {
+        "path":"portfolio_logo1.png",
+        "personal": false
+    },
+    {
+        "path":"portfolio_logo2.png",
+        "personal": false
+    },
+    {
+        "path":"portfolio_logo3.png",
+        "personal": true
+    },
+    {
+        "path":"portfolio_logo4.png",
+        "personal": false
+    },
+    {
+        "path":"portfolio_logo5.png",
+        "personal": false
+    },
+    {
+        "path":"portfolio_logo6.png",
+        "personal": true
+    },
+    {
+        "path":"portfolio_logo7.png",
+        "personal": true
+    },
+    {
+        "path":"portfolio_logo8.png",
+        "personal": true
+    }
+]

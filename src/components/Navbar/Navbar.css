@@ -1,0 +1,51 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1% 5%;
+
+    border-bottom: 1px solid rgb(145, 145, 145);
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    overflow-y: hidden;
+}
+.Navbar *{
+    overflow-y: hidden;
+}
+
+.Navbar-tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px
+}
+
+
+#logo {
+    height: 50px;
+}
+
+.Headroom, .Headroom *{
+    overflow-y: hidden;
+}
+
+@media (orientation: portrait){
+    #logo {
+        height: 20px;
+    }
+    .Navbar{
+        height: 50px;
+    }
+    .Navbar-tools{
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;
+    }
+    .Navbar-tools *{
+        font-size: 15px;
+        display: flex;
+        justify-content: right;
+    }
+}

@@ -1,0 +1,73 @@
+#ContactForm {
+    text-align: center;
+    display: grid;
+    padding: 5% 20%;
+    background-color: aliceblue;
+}
+
+#ContactForm *{
+    margin: 10px;
+    animation: 1s animate-fade;
+}
+
+#ContactForm form {
+    display: grid;
+    justify-content: center;
+
+    max-width: 420px;
+    margin: 30px auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.fiverr-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 255, 149);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5%;
+    width: 40%;
+    border-radius: 5px;
+    justify-self: center;
+}
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (orientation:portrait){
+
+    #ContactForm{
+        padding: 50px 10px;
+    }
+    #ContactForm img{
+        display: none;
+    }
+    #ContactForm header,h1{
+        font-size: 30px;
+    }
+    #ContactForm p, #ContactForm button{
+        font-size: 15px;
+    }
+    #ContactForm textarea, #ContactForm input{
+        font-size: 15px;
+    }
+    .fiverr-btn{
+        width: 80%;
+    }
+    #ContactForm form{
+        margin-bottom: 10%;
+    }
+    #fiverr-icon{
+        font-size: 30px;
+    }
+}
+
